@@ -1,0 +1,56 @@
+// -----------------------------
+//  Forms
+// -----------------------------
+
+// Form
+// -----
+
+.form {
+    background-color: $color__form--background;
+    padding: 40px;
+-webkit-box-shadow: 10px 10px 0px 1px rgba(235,108,50,1);
+-moz-box-shadow: 10px 10px 0px 1px rgba(235,108,50,1);
+box-shadow: 10px 10px 0px 1px rgba(235,108,50,1);
+}
+
+// Inputs
+// ------
+
+input[type="search"], 
+input[type="email"], 
+input[type="password"], 
+textarea, 
+.input--single-line {
+    background-color: #fff;
+    border: 0;
+    &:hover {
+        border: 0;
+    }
+}
+
+// Legend & Labels
+// ---------------
+
+label, 
+legend {
+    color: $color__form-legend--text;
+}
+
+.signupform__label,
+.blogsearch__label {
+    display: none;
+}
+
+legend {
+    font-family: $font__h2--font-family;
+    font-size: $font__h2--font-size;
+    line-height: $font__h2--line-height;
+}
+
+
+// Button
+// ------
+.button--submit {
+    background-color: lighten($color__button--background, 5%);
+}
+

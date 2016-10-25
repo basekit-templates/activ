@@ -34,12 +34,14 @@
 
         // Default hover state background colour
         .social-link {
-            background-color: fade-out($color__socialicons--icon--background, 0.2);
+            background-color: $color__socialicons--icon--background;
         }
 
 
         // When hovering anchor link show brand colours as background
         &:hover .social-link {
+
+            text-decoration: none;
 
             &:before {
                 color: white;

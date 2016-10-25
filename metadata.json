@@ -1,11 +1,11 @@
 {
-    "name":"Tivoli",
+    "name":"Activ",
     "preprocessor": "sass",
     "widgetVersion": 2,
-    "thumbnail":"bergen.png",
+    "thumbnail":"thumbnail.png",
     "templateType":"standard",
     "pageTypes":["home", "blogpost"],
-    "screenshot":"atelier-screenshot.jpg",
+    "screenshot":"activ-screenshot.jpg",
     "images":[
         "images/slideshow-1.jpg",
         "images/slideshow-2.jpg"
@@ -166,7 +166,7 @@
             "color__button--text--hover": "@color__button--text"
         },
         "header": {
-            "color__header--background": "transparent"
+            "color__header--background": "@color-swatch3"
         },
         "footer": {
             "color__footer--background": "@color-swatch3"
@@ -186,7 +186,7 @@
         "form": {
             "color__form-legend--text": "#ffffff",
             "color__form-label--text": "lighten(@color__p--text, 10%);",
-            "color__form--background": "#ffffff"
+            "color__form--background": "@color-swatch3"
         },
         "slideshow": {
             "color__slideshow-caption--background": "rgba(0,0,0, 0.5)",
@@ -213,6 +213,7 @@
             "color__image-description--text": "@color__slideshow-description--text"
         },
         "gallery": {
+            "color__gallery-caption--background" : "#ffffff",
             "color__gallery-title--text": "#ffffff",
             "color__gallery-description--text": "#646464"
         },
@@ -221,7 +222,7 @@
             "color__twitter-tweet--text": "#292929"
         },
         "socialicons": {
-            "color__socialicons--icon--background": "#464646",
+            "color__socialicons--icon--background": "@color-swatch3",
             "color__socialicons--icon": "#ffffff"
         },
         "blog": {

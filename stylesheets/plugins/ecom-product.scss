@@ -115,6 +115,11 @@
         display: none;
     }
 
+    &__form {
+        background-color: transparent;
+        padding: 0;
+        box-shadow: none;
+    }
 
     &__form-body {
 

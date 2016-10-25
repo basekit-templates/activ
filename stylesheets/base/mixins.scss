@@ -39,3 +39,10 @@ $height-600px: 'only screen and (max-height: 600px)';
      -ms-transform: $transform;
     transform: $transform;
 }
+
+// Border Radius
+@mixin border-radius($radius) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}

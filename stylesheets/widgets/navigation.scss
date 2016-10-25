@@ -44,7 +44,7 @@
 
 .navigation-list--children {
     background-color: $color__navigation-list--background;
-    top: 99%;
+    top: 98%;
 }
 
 @media #{$tablet-860px} {
@@ -195,7 +195,7 @@
         }
 
         .navigation-item:hover .navigation-list--children {
-            margin-top: 0;
+            margin-top: -1px;
         }
 
         .navigation-list .navigation-item {

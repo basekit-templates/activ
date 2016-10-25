@@ -53,6 +53,7 @@
         padding: 0 45px 35px;
         position: relative;
         text-align: center;
+        width: 50%;
     }
 
 
@@ -61,11 +62,6 @@
         top: -40px;
         left: 0;
         right: 0;
-
-
-        &-image {
-            @include border-radius(100%);
-        }
     }
 
 

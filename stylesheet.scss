@@ -39,22 +39,27 @@
 @import "stylesheets/base/typography.scss";                                    // Typography
 
 
-
 // Widgets Styles
 // --------------
 
 
 @import "stylesheets/widgets/navigation.scss";             // Navigation                         // Navigation Icon
-@import "stylesheets/widgets/slideshow.scss";             // Navigation                         // Navigation Icon
-
-
-
+@import "stylesheets/widgets/slideshow.scss";             // Navigation                         // Navigation Icon@import "stylesheets/widgets/forms.scss";             // Navigation                         // Navigation Icon
+@import "stylesheets/widgets/image.scss";             // Navigation                         // Navigation Icon           // Navigation                         // Navigation Icon
+@import "stylesheets/widgets/forms.scss";             // Navigation                         // Navigation Icon          // Navigation                         // Navigation Icon
+@import "stylesheets/widgets/social.scss";             // Navigation                         // Navigation Icon
+@import "stylesheets/widgets/twitter.scss";             // Navigation                         // Navigation Icon
+@import "stylesheets/widgets/yelp.scss";             // Navigation                         // Navigation Icon
 
 
 // Page Specific Styles
 // ----------------------
 
 
+@import "stylesheets/plugins/blog-post-list.scss";             // Navigation                         // Navigation Icon
+@import "stylesheets/plugins/blog-post.scss";             // Navigation                         // Navigation Icon
+@import "stylesheets/plugins/ecom-product-list.scss";             // Navigation                         // Navigation Icon
+@import "stylesheets/plugins/ecom-product.scss";             // Navigation                         // Navigation Icon
 
 
 
@@ -86,6 +91,10 @@ body {
     }
 }
 
+button,
+.button {
+    transition: all 0.3s ease 0s;
+}
 
 
 // Header
@@ -199,6 +208,16 @@ body {
     }
     .social-link {
         color: #ffffff;
+        background-color: transparent;
+        width: 20px;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .social-list:hover>.social-item:hover .social-link,
+    .social-list:hover>.social-item .social-link {
+        background-color: transparent;
     }
 
     .companyaddress__address-line {
@@ -265,6 +284,10 @@ body {
     padding: 20px 0;
     text-align: center;
     background-color: $color__footer--background;
+
+    h1,h2,h3,h4,h5,p,a {
+        color: #fff;
+    }
 
     @media #{$mobile-650px} {
         padding-top: 25px;
