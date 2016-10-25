@@ -1,0 +1,121 @@
+// -----------------------------
+// Typography
+// -----------------------------
+
+
+// Global
+// -------------------------
+
+body {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+    @media #{$mobile} {
+    }
+}
+
+// Companyname
+// -----------
+
+.company-link {
+    @media #{$tablet-860px} {
+        font-size: $font__companyname--font-size * 0.80;
+        line-height: $font__companyname--line-height * 0.80;
+    }
+    @media #{$mobile-650px} {
+        font-size: $font__companyname--font-size * 0.60;
+        line-height: $font__companyname--line-height * 0.60;
+    }
+}
+
+
+// Headings
+// -------------------------
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    color: $color__h1--text;
+
+    @media #{$tablet-860px} {
+        font-size: $font__h1--font-size * 0.9;
+        line-height: $font__h1--line-height * 0.98;
+    }
+    @media #{$mobile-650px} {
+        font-size: $font__h1--font-size * 0.8;
+        line-height: $font__h1--line-height * 0.8;
+    }
+
+
+    &.pagetitle-text  {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+}
+
+h2 {
+    color: $color__h2--text;
+
+    @media #{$tablet-860px} {
+        font-size: $font__h2--font-size * 0.925;
+        line-height: $font__h2--line-height * 0.925;
+    }
+        @media #{$mobile-650px} {
+        font-size: $font__h2--font-size * 0.80;
+        line-height: $font__h2--line-height * 0.80;
+    }
+}
+
+h3 {
+    color: $color__h3--text;
+
+    @media #{$tablet-860px} {
+        font-size: $font__h3--font-size * 0.9;
+        line-height: $font__h3--line-height * 0.9;
+    }
+    @media #{$mobile-650px} {
+        font-size: $font__h3--font-size * 0.9;
+        line-height: $font__h3--line-height * 0.9;
+    }
+}
+
+h4 {
+    color: $color__h4--text;
+
+    @media #{$tablet-860px} {
+        font-size: $font__h4--font-size * 0.9;
+        line-height: $font__h4--line-height * 0.9;
+    }
+
+    @media #{$mobile-650px} {
+        font-size: $font__h4--font-size * 0.85;
+        line-height: $font__h4--line-height * 0.85;
+    }
+}
+
+h5 {
+    font-size: $font__h4--font-size * 0.8;
+    font-weight: 400;
+    line-height: $font__h4--line-height * 0.8;
+
+    @media #{$mobile-650px} {
+        font-size: $font__h3--font-size * 0.75;
+        line-height: $font__h3--line-height * 0.75;
+    }
+}
+
+h6 {
+    font-size: $font__h4--font-size * 0.6;
+    line-height: $font__h4--line-height * 0.6;
+    font-style: normal;
+}
+

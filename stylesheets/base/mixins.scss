@@ -1,0 +1,42 @@
+
+// -----------------------------
+//  Mixins
+// -----------------------------
+
+
+// Media Queries
+// ------------------------------------------
+
+
+$desktop-1024px: 'only screen and (max-width: 1024px)';
+$tablet-860px: 'only screen and (max-width: 860px)';
+$mobile-650px: 'only screen and (max-width: 650px)';
+$height-600px: 'only screen and (max-height: 600px)';
+
+
+// Media Queries
+// ------------------------------------------
+
+
+// $desktop-1024px: 'only screen and (max-width: 1024px)';
+
+
+
+// General Mixins
+// ------------------------------------------
+
+// Transitions
+
+@mixin transition($prop: all .3s ease-in-out) {
+-webkit-transition: $prop;
+-moz-transition:    $prop;
+-ms-transition:     $prop;
+-o-transition:      $prop;
+}
+
+ // Transform
+ @mixin transform($transform: scale(1)) {
+    -webkit-transform: $transform;
+     -ms-transform: $transform;
+    transform: $transform;
+}

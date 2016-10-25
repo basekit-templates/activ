@@ -1,0 +1,82 @@
+{% extends "layout.twig" %}
+{% block content %}
+
+
+<!-- Container -->
+<div class="home-page">
+
+    <div class="homepage-container">
+
+            <!-- Widget Profile -->
+            <div class="homepage-widget">
+    
+            {{widget('profile', 'socialicons', {
+                'profileType':'socialicons'
+            })|raw}}
+    
+            </div>
+
+            {% include "includes/header.twig" %}
+    
+            <!-- Slideshow -->
+            <div class="homepage-slideshow">
+        
+            {{widget('responsiveslideshow', 'homepage-slideshow', {
+                'duration':'3',
+                'transSpeed': '1000',
+                'transType': 'fade',
+                'showButtons': true,
+                'showBullets': true,
+                'allowPause': true,
+                'allowLoop': true,
+                'showTitle': true,
+                'showDescription': true,
+                'duration': '60',
+                'crop': true,
+                'images':[
+                {
+                    'imageHeight':'auto',
+                    'imageWidth':'100%',
+                    'url':'https://images.unsplash.com/photo-1470298740710-87fd14ccb21f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&s=d381f374d869918476c650ae661e09ab',
+                    'title':'First slide title',
+                    'description': 'First slide description'
+                  },
+                {
+                    'imageHeight':'auto',
+                    'imageWidth':'100%',
+                    'url':'https://static.pexels.com/photos/15765/pexels-photo.jpg',
+                    'title':'Second slide title',
+                    'description': 'Second slide description'
+                  },
+                {
+                    'imageHeight':'auto',
+                    'imageWidth':'100%',
+                    'url':'https://static.pexels.com/photos/12838/pexels-photo-12838.jpeg',
+                    'title':'Third slide title',
+                    'description': 'Third slide description'
+                  }
+                ]
+              })|raw}}
+        
+              </div>
+    
+        </div>
+
+    <div role="main" id="main">
+
+        <div class="container">
+
+            <!-- Main Zone -->
+            {{zone('main')|raw}}
+
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    {% include "includes/footer.twig" %}
+
+</div>
+
+{% endblock %}
+

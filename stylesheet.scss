@@ -1,0 +1,272 @@
+
+// -----------------------------
+// Table of Contents
+// -----------------------------
+
+//  SASS Includes
+//    - BK SASS Framework
+//    - Base Styles
+//    - Widgets
+//    - Plugins
+//    - Pages
+
+
+//  Theme Styles
+//    - Header
+//    - Main / Responsive Columns
+//    - Footer
+
+
+
+
+// -----------------------------
+//  SASS Includes
+// -----------------------------
+
+
+
+// BK SASS Framework
+// ------------------
+
+//@import "variables.scss";                              // V8 Framework
+@import "stylesheets/base/bk-sass-framework-v8.scss";                              // V8 Framework
+
+
+// Base Styles
+// --------------
+
+@import "stylesheets/base/mixins.scss";                                        // Mixins
+@import "stylesheets/base/typography.scss";                                    // Typography
+
+
+
+// Widgets Styles
+// --------------
+
+
+@import "stylesheets/widgets/navigation.scss";             // Navigation                         // Navigation Icon
+@import "stylesheets/widgets/slideshow.scss";             // Navigation                         // Navigation Icon
+
+
+
+
+
+// Page Specific Styles
+// ----------------------
+
+
+
+
+
+// -----------------------------
+//  Theme Styles
+// -----------------------------
+
+
+
+// Global
+// ---------------
+
+body {
+    background-color: $color__body--background;
+}
+
+#main {
+    margin-top: 40px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    overflow: hidden;
+    padding: 0 40px;
+
+    @media #{$mobile-650px} {
+        padding: 0 25px;
+    }
+}
+
+
+
+// Header
+// ---------------
+
+.template-header {
+
+
+    // Flex position logo / company name
+    &--brand {
+        @include flex-display();
+        @include flex-wrap(wrap);
+        @include align-items(center);
+        @include flex(1 0 auto);
+        padding: 0 10px 0 0;
+        text-align: center;
+        z-index: 999;
+
+
+        @media #{$tablet-860px} {
+            max-width: 100%;
+        }
+
+
+        // Add spacing betweent logo and company name
+        .widget:first-child {
+            margin-right: 6px;
+        }
+
+
+        // Stop logo becoming to large
+        .logo-image {
+            max-width: 200px;
+
+
+            @media #{$mobile-650px} {
+                max-width: 150px;
+            }
+        }
+    }
+}
+
+
+.homepage-container {
+    @include flex-display();
+    @include flex-wrap(nowrap);
+    @include align-items(flex-start);
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    @include align-content(stretch);
+
+    background-color: $color__navigation--background;
+    @media #{$tablet-860px} {
+        width: 100%;
+        display: block;
+    }
+}
+
+.homepage-slideshow {
+    @include flex-order(0);
+    @include flex (1 1 70%);
+    @include align-self(auto);
+
+    min-height: 768px;
+
+    @media #{$tablet-860px} {
+        width: 100%;
+        display: block;
+        min-height: 0px;
+    }
+}
+
+.template-header {
+    @include flex-order(1);
+    @include flex (1 1 30%);
+    @include align-self(flex-start);
+
+    min-height: 768px;
+    background-color: $color__header--background;
+
+    @media #{$tablet-860px} {
+        width: 100%;
+        display: block;
+        min-height: 0px;
+    }
+}
+
+.logo-container {
+    background-color: transparent;
+    margin: 0;
+    width: 100%;
+    padding: 20px 3%;
+    text-align: center;
+}
+
+.homepage-widget {
+    position: absolute;
+    background-color: transparent;
+    z-index: 9999;
+    left: 3%;
+    top: 2%;
+
+    .social-name {
+        display: none;
+    }
+    .social-link {
+        color: #ffffff;
+    }
+
+    @media #{$tablet-860px} {
+        display: none;
+    }
+}
+
+.navigation-container {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+}
+
+[data-widget-type="logo"] {
+    margin-bottom: 10px;
+    @media #{$tablet-860px} {
+        margin-right: 10px;
+        margin-bottom: 0;
+    }
+}
+
+[data-widget-type="logo"],
+[data-widget-type="companyname"] {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    @media #{$tablet-860px} {
+        display: inline-block;
+        text-align: left;
+        vertical-align: middle;
+        width: inherit;
+    }
+}
+
+.logo-companyname-container {
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+
+    padding: 6% 4% 11% 4%;
+    @media #{$tablet-860px} {
+        padding: 20px;
+    }
+}
+
+
+// Footer
+// ---------------
+
+.template-footer {
+    padding: 20px 0;
+    text-align: center;
+    background-color: $color__footer--background;
+
+    h1, h2, h3, h4, p {
+        color: #ffffff;
+        padding-bottom: 0;
+    }
+
+    @media #{$mobile-650px} {
+        padding-top: 25px;
+    }
+}
+
