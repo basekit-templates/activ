@@ -26,7 +26,6 @@ $height-600px: 'only screen and (max-height: 600px)';
 // ------------------------------------------
 
 // Transitions
-
 @mixin transition($prop: all .3s ease-in-out) {
 -webkit-transition: $prop;
 -moz-transition:    $prop;

@@ -2,10 +2,6 @@
 //  Navigation
 // -----------------------------
 
-.navigation-item {
-    display: block;
-}
-
 .extendednavigation .item-name {
     border-bottom: 1px solid lighten($color__navigation--background, 10%);
     display: inline-block;
@@ -24,7 +20,7 @@
 
 // Universal navigation styling
 .navigation-item {
-
+    display: block;
     // Navigation dropdown arrow
     span.item-name:after {
         color: $color__navigation--text;
@@ -35,6 +31,11 @@
         position: relative;
         top: -2px;
     }
+    &:last-child {
+        .item-name {
+            border-bottom: 1px solid transparent;
+        }
+    }
 }
 
 .navigation-list {
@@ -44,14 +45,6 @@
 .navigation-list--children {
     background-color: $color__navigation-list--background;
     top: 99%;
-}
-
-.extendednavigation__navigation-item {
-    &:last-child {
-        .item-name {
-            border-bottom: 1px solid transparent;
-        }
-    }
 }
 
 @media #{$tablet-860px} {

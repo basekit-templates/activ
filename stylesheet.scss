@@ -93,6 +93,18 @@ body {
 
 .template-header {
 
+    @include flex-order(1);
+    @include flex (1 1 30%);
+    @include align-self(flex-start);
+
+    min-height: 768px;
+    background-color: $color__header--background;
+
+    @media #{$tablet-860px} {
+        width: 100%;
+        display: block;
+        min-height: 0px;
+    }
 
     // Flex position logo / company name
     &--brand {
@@ -100,6 +112,7 @@ body {
         @include flex-wrap(wrap);
         @include align-items(center);
         @include flex(1 0 auto);
+
         padding: 0 10px 0 0;
         text-align: center;
         z-index: 999;
@@ -128,7 +141,10 @@ body {
     }
 }
 
+// Homepage Features
+// -----------------
 
+// Homepage Container
 .homepage-container {
     @include flex-display();
     @include flex-wrap(nowrap);
@@ -138,12 +154,14 @@ body {
     @include align-content(stretch);
 
     background-color: $color__navigation--background;
+
     @media #{$tablet-860px} {
         width: 100%;
         display: block;
     }
 }
 
+// Homepage Slideshow
 .homepage-slideshow {
     @include flex-order(0);
     @include flex (1 1 70%);
@@ -158,21 +176,7 @@ body {
     }
 }
 
-.template-header {
-    @include flex-order(1);
-    @include flex (1 1 30%);
-    @include align-self(flex-start);
-
-    min-height: 768px;
-    background-color: $color__header--background;
-
-    @media #{$tablet-860px} {
-        width: 100%;
-        display: block;
-        min-height: 0px;
-    }
-}
-
+// Logo container
 .logo-container {
     background-color: transparent;
     margin: 0;
@@ -181,12 +185,14 @@ body {
     text-align: center;
 }
 
+// Homagepage widget
 .homepage-widget {
     position: absolute;
     background-color: transparent;
-    z-index: 9999;
+    z-index: 99999;
     left: 3%;
     top: 2%;
+    width: 64%;
 
     .social-name {
         display: none;
@@ -195,21 +201,26 @@ body {
         color: #ffffff;
     }
 
+    .companyaddress__address-line {
+        display: inline-block;
+        float: left;
+    }
+
+    h1, h2, h3, h4, p, a {
+        color: #ffffff;
+        padding-bottom: 0;
+    }
+
     @media #{$tablet-860px} {
         display: none;
     }
 }
 
+// Navigation Container
 .navigation-container {
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
+    @include align-self(center);
+    @include flex-order(0);
+    @include flex(0 1 auto);
 }
 
 [data-widget-type="logo"] {
@@ -234,16 +245,11 @@ body {
     }
 }
 
+// Logo & Companyname container
 .logo-companyname-container {
-    -webkit-order: 0;
-    -ms-flex-order: 0;
-    order: 0;
-    -webkit-flex: 0 1 auto;
-    -ms-flex: 0 1 auto;
-    flex: 0 1 auto;
-    -webkit-align-self: center;
-    -ms-flex-item-align: center;
-    align-self: center;
+    @include align-self(center);
+    @include flex-order(0);
+    @include flex(0 1 auto);
 
     padding: 6% 4% 11% 4%;
     @media #{$tablet-860px} {
@@ -259,11 +265,6 @@ body {
     padding: 20px 0;
     text-align: center;
     background-color: $color__footer--background;
-
-    h1, h2, h3, h4, p {
-        color: #ffffff;
-        padding-bottom: 0;
-    }
 
     @media #{$mobile-650px} {
         padding-top: 25px;

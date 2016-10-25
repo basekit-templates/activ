@@ -100,26 +100,13 @@
     }
 
     .figure {
+        @include flex-display();
+        @include align-items(center);
+        @include justify-content(center);
+
         background-color: transparent;
         background-repeat: no-repeat;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: -ms-flex;
-        display: flex;
-        -webkit-align-items: center;
-        -moz-align-items: center;
-        -ms-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        webkit-box-pack: center;
-        -webkit-justify-content: center;
-        -moz-justify-content: center;
-        -ms-justify-content: center;
-        -ms-flex-pack: center;
-        justify-content: center;
         position: initial;
-
         min-height: 768px;
 
         @media #{$tablet-860px} {
