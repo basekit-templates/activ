@@ -225,6 +225,30 @@ button,
         float: left;
     }
 
+    .form {
+        background-color: transparent;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .signupform__form-group {
+        display: inline-block;
+    }
+
+    .companystrapline__strapline {
+        h2 {
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+
+    .companyheadline__headline {
+        h2 {
+            font-size: 36px;
+            line-height: 48px
+        }
+    }
+
     h1, h2, h3, h4, p, a {
         color: #ffffff;
         padding-bottom: 0;
