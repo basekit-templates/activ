@@ -41,6 +41,11 @@ legend {
     display: none;
 }
 
+.signupform__legend,
+.blogsearch__legend {
+    margin-bottom: 10px;
+}
+
 legend {
     font-family: $font__h2--font-family;
     font-size: $font__h2--font-size;
