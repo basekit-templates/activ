@@ -1,39 +1,60 @@
+
 // -----------------------------
 //  Forms
 // -----------------------------
+
 
 // Form
 // -----
 
 .form {
     background-color: $color__form--background;
-    padding: 40px;
--webkit-box-shadow: 10px 10px 0px 1px rgba(235,108,50,1);
--moz-box-shadow: 10px 10px 0px 1px rgba(235,108,50,1);
-box-shadow: 10px 10px 0px 1px rgba(235,108,50,1);
+    padding: 80px;
+
+    @include box-shadow(0px 0px 37px 15px rgba(0,0,0,0.07));
+
+    @media #{$mobile-860px} { 
+        padding: 60px;
+    }
+
+    @media #{$mobile-650px} { 
+        padding: 20px;
+    }
 }
+
 
 // Inputs
 // ------
 
+// Inputs
 input[type="search"], 
 input[type="email"], 
 input[type="password"], 
 textarea, 
 .input--single-line {
     background-color: #fff;
-    border: 0;
+    border: 1px solid #d4d4d4;
     &:hover {
-        border: 0;
+        border: 1px solid #d4d4d4;
     }
 }
+
+// Focus
+input[type="search"]:focus, 
+input[type="email"]:focus, 
+input[type="password"]:focus, 
+textarea:focus, 
+.input--single-line:focus {
+    border-color: darken(#d4d4d4, 10%);
+}
+
 
 // Legend & Labels
 // ---------------
 
-label, 
-legend {
-    color: $color__form-legend--text;
+// Label
+label {
+    color: $color__form-label--text;
 }
 
 .signupform__label,
@@ -41,21 +62,24 @@ legend {
     display: none;
 }
 
+// Legend
+legend {
+    font-family: $font__h2--font-family;
+    font-size: $font__h2--font-size;
+    line-height: $font__h2--line-height;
+    color: $color__form-legend--text;
+}
+
 .signupform__legend,
 .blogsearch__legend {
     margin-bottom: 10px;
 }
 
-legend {
-    font-family: $font__h2--font-family;
-    font-size: $font__h2--font-size;
-    line-height: $font__h2--line-height;
-}
-
 
 // Button
 // ------
+
 .button--submit {
-    background-color: lighten($color__button--background, 5%);
+    background-color: $color__button--background;
 }
 

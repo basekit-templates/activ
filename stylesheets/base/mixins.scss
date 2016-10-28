@@ -25,6 +25,7 @@ $height-600px: 'only screen and (max-height: 600px)';
 // General Mixins
 // ------------------------------------------
 
+
 // Transitions
 @mixin transition($prop: all .3s ease-in-out) {
 -webkit-transition: $prop;
@@ -33,16 +34,26 @@ $height-600px: 'only screen and (max-height: 600px)';
 -o-transition:      $prop;
 }
 
- // Transform
- @mixin transform($transform: scale(1)) {
+
+// Transform
+@mixin transform($transform: scale(1)) {
     -webkit-transform: $transform;
      -ms-transform: $transform;
     transform: $transform;
 }
+
 
 // Border Radius
 @mixin border-radius($radius) {
     -webkit-border-radius: $radius;
     -moz-border-radius: $radius;
     border-radius: $radius;
+}
+
+
+// Box shadow
+@mixin box-shadow($shadow) {
+    -webkit-box-shadow: $shadow;
+-moz-box-shadow: $shadow;
+box-shadow: $shadow;
 }

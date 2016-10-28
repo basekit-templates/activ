@@ -28,45 +28,45 @@
 // BK SASS Framework
 // ------------------
 
-//@import "variables.scss";                              // V8 Framework
-@import "stylesheets/base/bk-sass-framework-v8.scss";                              // V8 Framework
+//@import "variables.scss";                              
+@import "stylesheets/base/bk-sass-framework-v8.scss";                          
 
 
 // Base Styles
 // --------------
 
-@import "stylesheets/base/mixins.scss";                                        // Mixins
-@import "stylesheets/base/typography.scss";                                    // Typography
+@import "stylesheets/base/mixins.scss";                                    
+@import "stylesheets/base/typography.scss";                                  
 
 
 // Widgets Styles
 // --------------
 
 
-@import "stylesheets/widgets/navigation.scss";             // Navigation                         // Navigation Icon
-@import "stylesheets/widgets/slideshow.scss";             // Navigation                         // Navigation Icon@import "stylesheets/widgets/forms.scss";             // Navigation                         // Navigation Icon
-@import "stylesheets/widgets/image.scss";             // Navigation                         // Navigation Icon           // Navigation                         // Navigation Icon
-@import "stylesheets/widgets/forms.scss";             // Navigation                         // Navigation Icon          // Navigation                         // Navigation Icon
-@import "stylesheets/widgets/social.scss";             // Navigation                         // Navigation Icon
-@import "stylesheets/widgets/twitter.scss";             // Navigation                         // Navigation Icon
-@import "stylesheets/widgets/yelp.scss";             // Navigation                         // Navigation Icon
+@import "stylesheets/widgets/navigation.scss";            
+@import "stylesheets/widgets/slideshow.scss";           
+@import "stylesheets/widgets/image.scss";           
+@import "stylesheets/widgets/social.scss";           
+@import "stylesheets/widgets/twitter.scss";            
+@import "stylesheets/widgets/yelp.scss";
+@import "stylesheets/widgets/forms.scss";              
 
 
 // Page Specific Styles
 // ----------------------
 
 
-@import "stylesheets/plugins/blog-post-list.scss";             // Navigation                         // Navigation Icon
-@import "stylesheets/plugins/blog-post.scss";             // Navigation                         // Navigation Icon
-@import "stylesheets/plugins/ecom-product-list.scss";             // Navigation                         // Navigation Icon
-@import "stylesheets/plugins/ecom-product.scss";             // Navigation                         // Navigation Icon
+@import "stylesheets/plugins/blog-post-list.scss";          
+@import "stylesheets/plugins/blog-post.scss";            
+@import "stylesheets/plugins/ecom-product-list.scss";          
+@import "stylesheets/plugins/ecom-product.scss";           
+
 
 
 
 // -----------------------------
 //  Theme Styles
 // -----------------------------
-
 
 
 // Global
@@ -94,6 +94,7 @@ body {
 button,
 .button {
     transition: all 0.3s ease 0s;
+    padding: 4px 32px;
 }
 
 
@@ -150,6 +151,7 @@ button,
     }
 }
 
+
 // Homepage Features
 // -----------------
 
@@ -203,6 +205,7 @@ button,
     top: 2%;
     width: 64%;
 
+    // Social
     .social-name {
         display: none;
     }
@@ -220,11 +223,13 @@ button,
         background-color: transparent;
     }
 
+    // Address
     .companyaddress__address-line {
         display: inline-block;
         float: left;
     }
 
+    // Sign up form
     .form {
         background-color: transparent;
         padding: 0;
@@ -235,16 +240,40 @@ button,
         display: inline-block;
     }
 
-    .companystrapline__strapline {
-        font-size: 20px;
-        line-height: 32px;
-    }
-
+    // Headline
     .companyheadline__headline {
         font-size: 36px;
         line-height: 48px
     }
 
+    // Strapline
+    .companystrapline__strapline {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    // Twitter
+    .twitter__tweet-item {
+        background-color: transparent;
+        padding: 0;
+        text-align: center;
+    }
+
+    .twitter__tweet-wrap {
+        padding-top: 0;
+    }
+
+    .twitter__avatar {
+        display: none;
+    }
+
+    .twitter__tweet-content {
+        padding: 0;
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    // Typography
     h1, h2, h3, h4, p, a {
         color: #ffffff;
         padding-bottom: 0;

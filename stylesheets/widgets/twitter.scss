@@ -2,30 +2,9 @@
 //  Twitter Widget
 // -----------------------------
 
-
-.widget[data-name="twitter"] {
-    overflow: hidden;
-    margin: 0 auto;
-    max-width: 1050px;
-    padding-top: 40px;
-}
-
-
 .twitter {
     overflow: visible!important;
     height: 100%!important;
-
-    &:before,
-    &:after {
-        background-color: $color__body--background;
-        content: "";
-        position: absolute;
-        top: 10%;
-        bottom: 10%;
-        height: 80%;
-        width: 45px;
-        z-index: 1;
-    }
 
     &:before {
         left: 0;
@@ -53,15 +32,33 @@
         padding: 0 45px 35px;
         position: relative;
         text-align: center;
-        width: 50%;
+        width: 48%;
+        margin-top: 60px;
+
+        @include box-shadow(0px 0px 37px 15px rgba(0,0,0,0.07));
+
+        &:nth-child(odd) {
+            margin-right: 4%;
+        }
+
+        @media #{$mobile-650px} {
+            width: 100%;
+            &:nth-child(odd) {
+                margin-right: 0%;
+            }
+        }
     }
 
 
     &__avatar {
         position: absolute;
-        top: -40px;
+        top: -50px;
         left: 0;
         right: 0;
+    }
+
+    &__avatar-image {
+        border-radius: 50px;
     }
 
 

@@ -28,6 +28,7 @@
         background-image: image('/images/arrow-down.png');
         background-position: center;
         width: 100px;
+        display: block;
         @media #{$tablet-860px} {
             background-image: image('/images/arrow-down.svg');
         }
@@ -136,6 +137,7 @@
     }
 }
 
+// Slideshow Button
 .responsiveslideshow__button.button {
     background-color: transparent;
     border: 1px solid #fff;

@@ -156,10 +156,10 @@
         },
         "button": {
             "font__button--font-family": "@font-swatch7-font-family",
-            "font__button--font-size": "14px",
-            "font__button--font-weight": "600",
+            "font__button--font-size": "16px",
+            "font__button--font-weight": "700",
             "font__button--line-height": "34px",
-            "font__button--letter-spacing": "2px",
+            "font__button--letter-spacing": "0px",
             "color__button--background": "@color-swatch3",
             "color__button--text": "#ffffff",
             "color__button--background--hover": "lighten(@color-swatch3,5%)",
@@ -184,9 +184,9 @@
             "color__navigation--text--selected": "#ffffff"
         },
         "form": {
-            "color__form-legend--text": "#ffffff",
-            "color__form-label--text": "lighten(@color__p--text, 10%);",
-            "color__form--background": "@color-swatch3"
+            "color__form-legend--text": "@color-swatch3",
+            "color__form-label--text": "@color__p--text",
+            "color__form--background": "@color-swatch1"
         },
         "slideshow": {
             "color__slideshow-caption--background": "rgba(0,0,0, 0.5)",
@@ -219,7 +219,7 @@
         },
         "twitter": {
             "color__twitter--background": "#ffffff",
-            "color__twitter-tweet--text": "#292929"
+            "color__twitter-tweet--text": "@color-swatch3"
         },
         "socialicons": {
             "color__socialicons--icon--background": "@color-swatch3",
