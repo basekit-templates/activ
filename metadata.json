@@ -214,7 +214,7 @@
         },
         "gallery": {
             "color__gallery-caption--background" : "#ffffff",
-            "color__gallery-title--text": "#ffffff",
+            "color__gallery-title--text": "@color-swatch3",
             "color__gallery-description--text": "#646464"
         },
         "twitter": {

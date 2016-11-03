@@ -64,7 +64,7 @@ textarea,
     &:hover {
         border: 1px solid #d4d4d4;
     }
-    @media #{$tablet} {
+    @media #{$tablet-860px} {
         font-size: initial;
         line-height: initial;
     }
