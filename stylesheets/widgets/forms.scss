@@ -22,6 +22,32 @@
     }
 }
 
+// Form Body
+.signupform__form-body,
+.blogsearch__form-body {
+    @include flex-display();
+    @include flex-direction(row);
+    @include flex-wrap(nowrap);
+    @include justify-content(center);
+    @include align-content(center);
+    @include align-items(center);
+}
+
+// Form Group
+.signupform__form-group,
+.blogsearch__form-group {
+    &:first-child {
+        @include flex-order(0);
+        @include flex(1 1 80%);
+        @include align-self(center);
+    }
+    &:last-child {
+        @include flex-order(1);
+        @include flex(1 1 20%);
+        @include align-self(center);
+    }
+}
+
 
 // Inputs
 // ------
@@ -34,8 +60,13 @@ textarea,
 .input--single-line {
     background-color: #fff;
     border: 1px solid #d4d4d4;
+    padding: 10px;
     &:hover {
         border: 1px solid #d4d4d4;
+    }
+    @media #{$tablet} {
+        font-size: initial;
+        line-height: initial;
     }
 }
 
@@ -68,6 +99,16 @@ legend {
     font-size: $font__h2--font-size;
     line-height: $font__h2--line-height;
     color: $color__form-legend--text;
+
+    @media #{$tablet-860px} {
+        font-size: $font__h2--font-size * 0.90;
+        line-height: $font__h2--line-height * 0.90;
+    }
+
+    @media #{$mobile-650px} {
+        font-size: $font__h2--font-size * 0.70;
+        line-height: $font__h2--line-height * 0.70;
+    }
 }
 
 .signupform__legend,

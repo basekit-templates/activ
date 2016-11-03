@@ -52,7 +52,7 @@
 
     &__avatar {
         position: absolute;
-        top: -50px;
+        top: -25px;
         left: 0;
         right: 0;
     }
@@ -83,12 +83,22 @@
 
     &__tweet-content {
         color: $color__twitter-tweet--text;
-        font-family: $font__h2--font-family;
-        font-size: $font__h2--font-size * 0.90;
-        line-height: $font__h2--line-height;
+        font-family: $font__h3--font-family;
+        font-size: $font__h3--font-size * 0.90;
+        line-height: $font__h3--line-height;
         margin: 0 auto;
         max-width: 680px;
         padding: 15px 0;
+
+        @media #{$tablet-860px} {
+            font-size: $font__h3--font-size * 0.80;
+            line-height: $font__h3--line-height * 0.90;
+        }
+
+        @media #{$mobile-650px} {
+            font-size: $font__h3--font-size * 0.60;
+            line-height: $font__h3--line-height * 0.70;
+        }
 
 
         a {
@@ -124,5 +134,21 @@
     &:last-child {
         right: 0;
     }
+}
+
+
+
+// Responsive Columns
+// ------------------------------
+
+ 
+.responsivecolumns .columns-three-left,
+.responsivecolumns .columns-three-middle,
+.responsivecolumns .columns-three-right,
+.responsivecolumns .columns-four-first,
+.responsivecolumns .columns-four-second,
+.responsivecolumns .columns-four-third,
+.responsivecolumns .columns-four-fourth {
+
 }
 

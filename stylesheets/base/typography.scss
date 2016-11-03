@@ -26,6 +26,9 @@ body {
         font-size: $font__companyname--font-size * 0.60;
         line-height: $font__companyname--line-height * 0.60;
     }
+    &:hover {
+        text-decoration: none;
+    }
 }
 
 

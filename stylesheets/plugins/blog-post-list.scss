@@ -41,10 +41,10 @@
 
 
     &__post-content {
+
+        @include box-shadow(0px 0px 37px 15px rgba(0,0,0,0.07));
+        
         background-color: $color__container--background;
-        -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.05);
-        -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.05);
-        box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.05);
         padding: 35px 50px;
         position: relative;
         margin: 0;

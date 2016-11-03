@@ -3,19 +3,22 @@
 
 
 <!-- Navigation Container -->
-<div class="container  default-page">
+<div class="default-page">
 
 
     <!-- Header -->
     {% include "includes/header.twig" %}
 
-    <div role="main" id="main">
+    <div class="container">
 
-        <!-- Main Zone -->
-        {{zone('main')|raw}}
+        <div role="main" id="main">
+    
+            <!-- Main Zone -->
+            {{zone('main')|raw}}
+    
+        </div>
 
     </div>
-
 
     <!-- Footer -->
     {% include "includes/footer.twig" %}

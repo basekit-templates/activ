@@ -98,6 +98,35 @@ button,
 }
 
 
+// Default Page
+// ---------------
+
+.default-page {
+    // Template Header
+    .template-header {
+        min-height: inherit;
+    }
+    // Logo & Companyname Container
+    .logo-companyname-container {
+        padding: 3% 0 0;
+        @media #{$tablet} {
+            padding: 20px;
+        }
+    }
+    // Navigation
+    .navigation-item {
+        display: inline-block;
+    }
+    .navigation-list {
+        margin: 0;
+    }
+    .extendednavigation .item-name {
+        border: 0;
+        padding: 20px;
+    }
+}
+
+
 // Header
 // ---------------
 
@@ -257,6 +286,8 @@ button,
         background-color: transparent;
         padding: 0;
         text-align: left;
+        width: 60%;
+        margin-top: 0;
     }
 
     .twitter__tweet-wrap {
@@ -327,6 +358,13 @@ button,
     padding: 6% 4% 11% 4%;
     @media #{$tablet-860px} {
         padding: 20px;
+    }
+}
+
+// Companyname 
+.company-link {
+    &:hover {
+        text-decoration: none;
     }
 }
 

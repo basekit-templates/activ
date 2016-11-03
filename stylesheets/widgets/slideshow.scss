@@ -12,8 +12,10 @@
     .previous-button, 
     .pause-toggle {
         background-color: transparent;
+        width: 150px;
     }
 
+    // Icons
     .icon--play:before, 
     .icon--pause.pause:before {
         margin-right: 0;
@@ -24,29 +26,56 @@
         content:"";
     }
 
+    // Previous button
     .previous-button {
-        background-image: image('/images/arrow-down.png');
+        background-image: url('../images/arrow-up.png');
         background-position: center;
-        width: 100px;
         display: block;
+        transform: rotate(180deg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-bottom: 60px;
+
         @media #{$tablet-860px} {
-            background-image: image('/images/arrow-down.svg');
+            background-image: url('../images/arrow-up.svg');
+            background-size: 70%;
         }
     }
 
-    .pause-toggle {
-        transform: rotate(90deg);
+    // Next button
+    .next-button {
+        background-image: url('../images/arrow-down.png');
+        background-position: center;
+        width: 100%;
+        display: block;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        margin-top: 60px;
+        margin-left: -4px;
+
+        @media #{$tablet-860px} {
+            background-image: url('../images/arrow-down.svg');
+            background-size: 70%;
+        }
     }
 
     .slide-navigation {
         position: absolute;
         z-index: 99999;
-        bottom: 50%;
-        right: 0;
-        right: 10%;
-        transform: rotate(-90deg);
-        transform-origin: 100% 0;
+        bottom: 0;
+        right: 5%;
+        top: 0;
+        margin: auto 0;
+
+        display: flex;
+        @include flex-direction(column);
+        @include justify-content (center);
+
         @media #{$tablet-860px} {
+            right: 0;
+        }
+
+        @media #{$mobile-650px} {
             display: none;
         }
     }
@@ -70,9 +99,14 @@
     .caption {
         background-color: transparent;
         bottom: 40%;
-        padding: 10px 12% 10px 4%;
+        padding: 10px 25% 10px 4%;
         z-index: 99;
         position: relative;
+
+        @media #{$tablet-860px} {
+            padding: 10px 20% 10px 4%;
+        }
+
     }
 
     // Slideshow image title

@@ -54,10 +54,10 @@
 
 
     &__product-content {
+
+        @include box-shadow(0px 0px 37px 15px rgba(0,0,0,0.07));
+        
         background-color: $color__container--background;
-        -webkit-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.08);
-        -moz-box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.08);
-        box-shadow: 0px 0px 40px 0px rgba(0,0,0,0.08);
         display: inline-block;
         margin: -60px 40px 0;
         max-width: 768px;
@@ -144,10 +144,7 @@
 
         &:focus,
         &:hover {
-            background-color: darken($color__form--background, 10%);
-            border: 2px solid darken($color__container--background, 14%);
-            color: darken($color__p--text, 12%);
-            -webkit-appearance: none;
+            background-color: darken($color__container--background, 6%);
         }
     }
 
