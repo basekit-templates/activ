@@ -124,3 +124,51 @@ legend {
     background-color: $color__button--background;
 }
 
+
+// Responsive Columns Widgets
+// ------------------------------
+
+.responsivecolumns {
+
+    // 2 columns
+    .columns-two-left,
+    .columns-two-right {
+        .form {
+            padding: 40px;
+        }
+    }
+
+    // 3 columns 
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right {
+
+    }
+
+    // 4 columns
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+
+    }
+
+    // 3 & 4 columns 
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right,
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+        legend {
+            font-size: 26px;
+            line-height: 38px;
+        }
+        .form {
+            padding: 20px;
+        }
+    }
+    
+}
+

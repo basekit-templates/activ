@@ -61,7 +61,9 @@
 @import "stylesheets/plugins/blog-post-list.scss";          
 @import "stylesheets/plugins/blog-post.scss";            
 @import "stylesheets/plugins/ecom-product-list.scss";          
-@import "stylesheets/plugins/ecom-product.scss";           
+@import "stylesheets/plugins/ecom-product.scss";
+@import "stylesheets/plugins/ecom-basket.scss";  
+
 
 
 
@@ -381,10 +383,90 @@ button,
 
     h1,h2,h3,h4,h5,p,a {
         color: #fff;
+        padding-bottom: 0;
     }
 
     @media #{$mobile-650px} {
-        padding-top: 25px;
+        padding: 10px 0;
     }
+}
+
+
+
+// Responsive Columns Widgets
+// ------------------------------
+
+.responsivecolumns {
+
+    .widget {
+        margin-bottom: 20px;
+    }
+
+    .blogpostlist__post-image+.blogpostlist__post-content {
+        margin: 0;
+    }
+
+    // 2 columns
+    .columns-two-left,
+    .columns-two-right {
+        .responsiveslideshow .figure {
+            position: relative;
+            min-height: 400px;
+            display: block;
+        }
+        .responsiveslideshow .caption {
+            min-height: 400px;
+        }
+        .responsiveslideshow__image-title {
+            font-size: $font__feature-headline--font-size * 0.7;
+            line-height: $font__feature-headline--line-height * 0.7;
+            display: inline-block;
+        }
+        .responsiveslideshow__image-description {
+            font-size: $font__feature-strapline--font-size * 0.7;
+            line-height: $font__feature-strapline--line-height * 0.7;
+            display: inline-block;
+        }
+    }
+
+    // 3 columns 
+
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right {
+
+    }
+
+    // 4 columns
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+
+    }
+
+    // 3 columns 
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right,
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+        .social-item {
+            margin-bottom: 15px;
+        }
+        .responsiveslideshow .slide-navigation {
+            display: none;
+        }
+        .responsiveslideshow .figure {
+            min-height: 300px;
+        }
+        .responsiveslideshow__image-title,
+        .responsiveslideshow__image-description {
+            display: none;
+        }
+    }
+    
 }
 

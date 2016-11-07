@@ -147,7 +147,6 @@
         // Blogpost date
         .timestamp {
             background-color: fade-out($color__body--background, 0.3);
-            color: lighten($color__body--background, 100%);
             font-family: $font__h2--font-family;
             font-size: 15px;
             @include flex-order(3);
@@ -260,7 +259,6 @@
         // Category and tags title styling
         .category-title,
         .tags-title {
-            color: lighten($color__body--background, 100%);
             display: block;
             font-size: 13px;
             font-weight: 600;
@@ -351,5 +349,66 @@
             }
         }
     }
+}
+
+
+
+// Responsive Columns Widgets
+// ------------------------------
+
+.responsivecolumns {
+
+    .blogpost__post-image+.blogpost__post-content+.blogpost__post-footer,
+    .blogpost__post-image+.blogpost__post-content {
+        display: block;
+        margin: 0;
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .blogpost__post-content {
+        padding: 20px;
+    }
+
+    .blogpost__post-footer {
+        padding: 20px 35px;
+        position: relative;
+    }
+
+    // 2 columns
+    .columns-two-left,
+    .columns-two-right {
+
+    }
+
+    // 3 columns 
+
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right {
+
+    }
+
+    // 4 columns
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+
+    }
+
+    // 3 & 4 columns 
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right,
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+        
+    }
+    
 }
 

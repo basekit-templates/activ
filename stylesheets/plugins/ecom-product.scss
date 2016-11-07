@@ -65,6 +65,11 @@
         position: relative;
         width: 100%;
         z-index: 2;
+
+        @media #{$tablet-860px} {
+            margin: 0;
+            padding: 20px;
+        }
     }
 
 
@@ -103,6 +108,9 @@
         display: inline-block;
         max-width: 200px;
         position: absolute;
+        @media #{$mobile-650px} {
+            position: relative;
+        }
     }
 
 
@@ -153,6 +161,9 @@
         display: inline-block;
         padding-left: 190px;
 
+        @media #{$mobile-650px} {
+            padding-left: 0;
+        }
 
         .button {
             background-color: $color__p--text;
@@ -169,7 +180,6 @@
 
 
     &__product-attribute-title {
-        color: lighten($color__body--background, 100%);
         display: block;
         font-size: 13px;
         font-weight: 600;
@@ -219,3 +229,61 @@
     }
 }*/
 
+
+
+
+// Responsive Columns Widgets
+// ------------------------------
+
+.responsivecolumns {
+
+    .ecomproduct__product-content {
+        margin: 0;
+        padding: 20px;
+    }
+
+    .ecomproduct__fieldset+.form-group {
+        position: relative;
+    }
+
+    .ecomproduct__view-basket-wrap {
+        padding-left: 0;
+    }
+
+    .ecomproduct .form {
+        padding: 0px;
+    }
+
+    // 2 columns
+    .columns-two-left,
+    .columns-two-right {
+    }
+
+    // 3 columns 
+
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right {
+
+    }
+
+    // 4 columns
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+
+    }
+
+    // 3 & 4 columns 
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right,
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+        
+    }
+    
+}

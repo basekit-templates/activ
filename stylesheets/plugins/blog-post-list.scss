@@ -145,22 +145,54 @@
 }
 
 
-// Styles for responsive columns
-.responsivecolumns .columns-three-left,
-.responsivecolumns .columns-three-middle,
-.responsivecolumns .columns-three-right,
-.responsivecolumns .columns-four-first,
-.responsivecolumns .columns-four-second,
-.responsivecolumns .columns-four-third,
-.responsivecolumns .columns-four-fourth {
+// Responsive Columns Widgets
+// ------------------------------
 
+.responsivecolumns {
 
-    .blogpostlist__post-items {
-        display: block;
+    .blogpostlist__post-content {
+        padding: 20px;
     }
 
-    .blogpostlist__post-article {
-        max-width: 100%;
+    // 2 columns
+    .columns-two-left,
+    .columns-two-right {
+
     }
+
+    // 3 columns 
+
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right {
+
+    }
+
+    // 4 columns
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+
+    }
+
+    // 3 & 4 columns 
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right,
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+            
+        .blogpostlist__post-items {
+            display: block;
+        }
+
+        .blogpostlist__post-article {
+            max-width: 100%;
+        }   
+    }
+    
 }
 
