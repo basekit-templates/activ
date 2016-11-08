@@ -232,8 +232,6 @@ $gallery-1col:  "only screen and (min-width:1px) and (max-width:650px)" !default
         .gallery__gallery-item {
             width: 100%;
             padding-bottom: 50%;
-        }
-        .gallery__gallery-item {
             &:nth-child(even) {
                 .gallery__image-link {
                     @include flex-order(2);
@@ -271,12 +269,14 @@ $gallery-1col:  "only screen and (min-width:1px) and (max-width:650px)" !default
     .columns-four-second,
     .columns-four-third,
     .columns-four-fourth {
-        .gallery__gallery-item {
-            width: 100%;
-            padding-bottom: 100%;
-        }
-        .gallery__caption {
-            display: none;
+        .gallery {
+            .gallery-item {
+                width: 100%;
+                padding-bottom: 100%;
+            }
+            .caption {
+                display: none;
+            }
         }
     }
     

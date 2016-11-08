@@ -2,6 +2,35 @@
 //  Navigation
 // -----------------------------
 
+// Default Page
+// ---------------
+
+.default-page {
+    // Navigation
+    .navigation-item {
+        display: inline-block;
+    }
+    .navigation-list {
+        margin: 0;
+    }
+    .navigation-list--children {
+        position: absolute;
+    }
+    .extendednavigation .item-name {
+        border: 0;
+        padding: 20px;
+    }
+    .navigation-container {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+    .navigation-item:hover .navigation-list--children {
+        display: block;
+        min-width: 180px;
+    }
+}
+
+
 // Item name
 .extendednavigation .item-name {
     display: inline-block;
@@ -9,8 +38,8 @@
 }
 
 
-// Navigation Styles For Default Pages
-// ------------------------------------
+// Navigation Styles 
+// ------------------
 
 
 // Hide navigation toggle button
@@ -38,6 +67,7 @@
     }
 }
 
+// Navigation List
 .navigation-list {
     background-color: $color__navigation--background;
 }
