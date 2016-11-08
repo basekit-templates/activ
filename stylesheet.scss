@@ -266,12 +266,14 @@ button,
     }
 
     // Sign up
-    .signupform__legend {
-        font-size: 26px;
-    }
 
-    .signupform__form-group {
-        display: inline-block;
+    .signupform {
+        .legend {
+            font-size: 26px;
+        }
+        .form-group {
+            display: inline-block;
+        }
     }
 
     // Headline
@@ -287,14 +289,6 @@ button,
     }
 
     // Twitter
-    .twitter .tweet-item {
-        background-color: transparent;
-        padding: 0;
-        text-align: left;
-        width: 60%;
-        margin-top: 0;
-        box-shadow: none;
-    }
 
     .twitter {
         .tweet-wrap {
@@ -307,6 +301,14 @@ button,
             padding: 0;
             font-size: 22px;
             line-height: 34px;
+        }
+        .tweet-item {
+            background-color: transparent;
+            padding: 0;
+            text-align: left;
+            width: 60%;
+            margin-top: 0;
+            box-shadow: none;
         }
     }
 
