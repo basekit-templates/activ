@@ -140,8 +140,9 @@ button,
     @include flex (1 1 30%);
     @include align-self(flex-start);
 
-    min-height: 768px;
+    max-height: 768px;
     background-color: $color__header--background;
+    overflow: scroll;
 
     @media #{$tablet-860px} {
         width: 100%;
@@ -198,6 +199,7 @@ button,
     @include align-content(stretch);
 
     background-color: $color__navigation--background;
+    max-height: 768px;
 
     @media #{$tablet-860px} {
         width: 100%;

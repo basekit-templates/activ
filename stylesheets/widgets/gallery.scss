@@ -124,6 +124,7 @@ $gallery-1col:  "only screen and (min-width:1px) and (max-width:650px)" !default
 
     @media #{$mobile-650px} {
         width: 100%;
+        display: none;
     }
 }
 
@@ -142,7 +143,6 @@ $gallery-1col:  "only screen and (min-width:1px) and (max-width:650px)" !default
     @include flex-grow(1);
 
     @media #{$mobile-650px} {
-        background-position: -9999px;
         overflow: hidden;
         width: 100%;
     }
@@ -154,6 +154,7 @@ $gallery-1col:  "only screen and (min-width:1px) and (max-width:650px)" !default
 
     @media #{$mobile-650px} {
         display: block;
+        width: 100%;
     }
 }
 
