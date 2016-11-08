@@ -250,6 +250,7 @@ button,
     .social-name {
         display: none;
     }
+
     .social-link {
         color: #ffffff;
         background-color: transparent;
@@ -275,6 +276,11 @@ button,
         background-color: transparent;
         padding: 0;
         box-shadow: none;
+    }
+
+    // Sign up
+    .signupform__legend {
+        font-size: 26px;
     }
 
     .signupform__form-group {
@@ -411,10 +417,6 @@ button,
         margin-bottom: 20px;
     }
 
-    .blogpostlist__post-image+.blogpostlist__post-content {
-        margin: 0;
-    }
-
     .widget__clicktocall a {
         &:hover {
             text-decoration: none;
@@ -424,24 +426,6 @@ button,
     // 2 columns
     .columns-two-left,
     .columns-two-right {
-        .responsiveslideshow .figure {
-            position: relative;
-            min-height: 400px;
-            display: block;
-        }
-        .responsiveslideshow .caption {
-            min-height: 400px;
-        }
-        .responsiveslideshow__image-title {
-            font-size: $font__feature-headline--font-size * 0.7;
-            line-height: $font__feature-headline--line-height * 0.7;
-            display: inline-block;
-        }
-        .responsiveslideshow__image-description {
-            font-size: $font__feature-strapline--font-size * 0.7;
-            line-height: $font__feature-strapline--line-height * 0.7;
-            display: inline-block;
-        }
     }
 
     // 3 columns 
@@ -468,19 +452,6 @@ button,
     .columns-four-second,
     .columns-four-third,
     .columns-four-fourth {
-        .social-item {
-            margin-bottom: 15px;
-        }
-        .responsiveslideshow .slide-navigation {
-            display: none;
-        }
-        .responsiveslideshow .figure {
-            min-height: 300px;
-        }
-        .responsiveslideshow__image-title,
-        .responsiveslideshow__image-description {
-            display: none;
-        }
     }
     
 }

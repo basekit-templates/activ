@@ -319,3 +319,44 @@
     }
 }
 
+
+// Responsive Columns Widgets
+// ------------------------------
+
+.responsivecolumns {
+
+    // 2 columns
+    .columns-two-left,
+    .columns-two-right {
+    }
+
+    // 3 columns 
+
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right {
+
+    }
+
+    // 4 columns
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+
+    }
+
+    // 3 columns 
+    .columns-three-left,
+    .columns-three-middle,
+    .columns-three-right,
+    .columns-four-first,
+    .columns-four-second,
+    .columns-four-third,
+    .columns-four-fourth {
+        .social-item {
+            margin-bottom: 15px;
+        }
+    }
+    
+}
