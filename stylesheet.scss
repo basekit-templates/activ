@@ -109,6 +109,7 @@ button,
     // Template Header
     .template-header {
         min-height: inherit;
+        overflow: inherit;
     }
     // Logo & Companyname Container
     .logo-companyname-container {
@@ -127,6 +128,10 @@ button,
     .extendednavigation .item-name {
         border: 0;
         padding: 20px;
+    }
+    .navigation-container {
+        margin: 0 auto;
+        max-width: 1200px;
     }
 }
 
@@ -204,6 +209,7 @@ button,
     @media #{$tablet-860px} {
         width: 100%;
         display: block;
+        max-height: 100%;
     }
 }
 
@@ -294,6 +300,7 @@ button,
         text-align: left;
         width: 60%;
         margin-top: 0;
+        box-shadow: none;
     }
 
     .twitter__tweet-wrap {
@@ -406,6 +413,12 @@ button,
 
     .blogpostlist__post-image+.blogpostlist__post-content {
         margin: 0;
+    }
+
+    .widget__clicktocall a {
+        &:hover {
+            text-decoration: none;
+        }
     }
 
     // 2 columns

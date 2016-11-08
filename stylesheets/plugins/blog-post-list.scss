@@ -191,7 +191,18 @@
 
         .blogpostlist__post-article {
             max-width: 100%;
-        }   
+        }  
+
+        .blogpostlist__post-title {
+            font-size: 22px;
+            line-height: 36px;
+        }
+        .blogpostlist__post-article {
+            margin-bottom: 30px;
+        }
+        .blogpostlist__image-link {
+            height: 300px;
+        } 
     }
     
 }

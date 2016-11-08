@@ -31,6 +31,10 @@
     @include justify-content(center);
     @include align-content(center);
     @include align-items(center);
+
+    @media #{$mobile-650px} {
+        display: block;
+    }
 }
 
 // Form Group
@@ -167,6 +171,10 @@ legend {
         }
         .form {
             padding: 20px;
+        }
+        .form-body {
+            display: block;
+            width: 100%;
         }
     }
     

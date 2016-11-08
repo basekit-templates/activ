@@ -4,11 +4,16 @@
     "widgetVersion": 2,
     "thumbnail":"thumbnail.png",
     "templateType":"standard",
-    "pageTypes":["home", "blogpost"],
+    "pageTypes":["home", "default"],
     "screenshot":"activ-screenshot.jpg",
     "images":[
-        "images/slideshow-1.jpg",
-        "images/slideshow-2.jpg"
+        "images/image-1.jpg",
+        "images/logo.png",
+        "images/arrow-up.png",
+        "images/arrow-down.png",
+        "images/slideshow/slideshow-1.jpg",
+        "images/slideshow/slideshow-2.jpg",
+        "images/slideshow/slideshow-3.jpg"
     ],
     "colorSwatches":
     {
@@ -23,7 +28,7 @@
         }
     },
     "fontSwatch": {
-       "title": "Roboto & Poppins",
+       "title": "Raleway & Poppins",
         "font1": {
             "font-family": "\"Raleway\", \"Lucida Grande\", Helvetica, sans-serif",
             "font-size": "52px",

@@ -43,6 +43,8 @@
 
         @media #{$mobile-650px} {
             width: 100%;
+            min-height: 100%;
+            padding: 20px;
             &:nth-child(odd) {
                 margin-right: 0%;
             }
@@ -63,7 +65,10 @@
 
 
     &__tweet-wrap {
-        padding-top: 65px;
+        padding-top: 50px;
+        @media #{$mobile-650px} {
+            padding-top: 25px;
+        }
     }
 
 
