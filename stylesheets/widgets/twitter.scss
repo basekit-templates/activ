@@ -21,7 +21,7 @@
         //height: 100%!important;
     }
 
-
+    // Tweet item
     .tweet-item {
         background-color: $color__twitter--background;
         float: left;
@@ -51,7 +51,7 @@
         }
     }
 
-
+    // Avatar
     &__avatar {
         position: absolute;
         top: -25px;
@@ -63,7 +63,7 @@
         border-radius: 50px;
     }
 
-
+    // Avatar
     &__tweet-wrap {
         padding-top: 50px;
         @media #{$mobile-650px} {
@@ -71,7 +71,7 @@
         }
     }
 
-
+    // Account name
     &__account-name {
         color: $color__p--text;
         font-family: $font__p--font-family;
@@ -85,7 +85,7 @@
         }
     }
 
-
+    // Tweet content
     &__tweet-content {
         color: $color__twitter-tweet--text;
         font-family: $font__h3--font-family;
@@ -121,34 +121,13 @@
 }
 
 
-.dot {
-    background-color: lighten($color__body--background, 15%);
-    text-indent: -9999px;
-    overflow: hidden;
-    position: absolute;
-    top: 25%;
-    bottom: 20%;
-    height: 55%;
-    width: 45px;
-    z-index: 2;
-
-    &:first-child {
-        left: 0;
-    }
-
-    &:last-child {
-        right: 0;
-    }
-}
-
-
 
 // Responsive Columns
 // ------------------------------
 
  
-// Responsive Columns Widgets
-// ------------------------------
+// Responsive Columns
+// ------------------
 
 .responsivecolumns {
 

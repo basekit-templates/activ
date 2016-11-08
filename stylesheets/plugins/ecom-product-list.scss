@@ -9,18 +9,18 @@
     position: relative;
 }
 
-
+// Ecom Product List + Ecom Featured Products
 .ecomproductslist,
 .ecomfeaturedproducts {
 
-
+    // Product List
     &__product-list {
         @include flex-display;
         @include flex-wrap(wrap);
         @include justify-content(space-between);
     }
 
-
+    // Product Item
     &__product-item {
         margin-bottom: 40px;
         width: 31%;
@@ -36,7 +36,7 @@
         }
     }
 
-
+    // Image
     &__product-item-image {
         height: auto;
         line-height: auto;
@@ -53,7 +53,7 @@
         width: 100%;
     }
 
-
+    // Product Content
     &__product-content {
 
         @include box-shadow(0px 0px 37px 15px rgba(0,0,0,0.07));
@@ -65,7 +65,7 @@
         padding: 15px 20px 12px;
     }
 
-
+    // Title
     &__product-item-title,
     &__title-link {
         color: $color__blogpostlist-title--text;
@@ -74,7 +74,7 @@
         padding-bottom: 5px;
     }
 
-
+    // Price
     &__product-item-price {
         font-size: $font__p--font-size * 1.2;
         line-height: $font__p--line-height * 0.9;
@@ -101,7 +101,7 @@
 //  Ecommerce Filters
 // -----------------------------
 
-
+// Toggle Filter
 .toggle-filter {
     cursor: pointer;
     position: absolute;
@@ -127,7 +127,7 @@
         z-index: -1;
     }
 
-
+    // Toggle Items
     .toggle-items .toggle-item {
         background: lighten($color__body--background, 100%);
         @include border-radius(50%);
@@ -507,21 +507,19 @@ form.ecomproductslist__form {
 
 .responsivecolumns {
 
-    .ecomproductslist__product-item, 
-    .ecomfeaturedproducts__product-item {
-        width: 100%;
-    }
-
-    .ecomproductslist__product-content, 
-    .ecomfeaturedproducts__product-content {
-        max-width: 100%;
-        margin: 0;
-        width: 100%;
-    }
-
-    .ecomproductslist__product-item-image, 
-    .ecomfeaturedproducts__product-item-image {
-        line-height: inherit;
+    .ecomproductslist, 
+    .ecomfeaturedproducts {
+        .product-item {
+            width: 100%;
+        }
+        .product-content {
+            max-width: 100%;
+            margin: 0;
+            width: 100%;
+        }
+        .product-item-image {
+            line-height: inherit;
+        }
     }
 
     // 2 columns

@@ -4,6 +4,7 @@
 
 .responsiveslideshow {
 
+    // Controls
     .control-text {
         display: none;
     }
@@ -59,6 +60,7 @@
         }
     }
 
+    // Slide Navigation
     .slide-navigation {
         position: absolute;
         z-index: 999;
@@ -96,6 +98,7 @@
         line-height: 1;
     }
 
+    // Caption
     .caption {
         background-color: transparent;
         bottom: 40%;

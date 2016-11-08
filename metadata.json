@@ -22,7 +22,7 @@
             "color2":"#FBE6A1",
             "color3":"#dc5718",
             "color4":"#dc5718",
-            "color5":"#737373",
+            "color5":"#787878",
             "color6":"#919191",
             "color7":"#9AA7B5"
         }
@@ -214,8 +214,8 @@
         },
         "image": {
             "color__image-caption--background": "rgba(0,0,0, 0.5)",
-            "color__image-title--text": "@color__slideshow-title--text",
-            "color__image-description--text": "@color__slideshow-description--text"
+            "color__image-title--text": "@color-swatch3",
+            "color__image-description--text": "#787878"
         },
         "gallery": {
             "color__gallery-caption--background" : "#ffffff",

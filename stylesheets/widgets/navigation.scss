@@ -2,6 +2,7 @@
 //  Navigation
 // -----------------------------
 
+// Item name
 .extendednavigation .item-name {
     display: inline-block;
     padding: 20px 40px;
@@ -44,8 +45,10 @@
 .navigation-list--children {
     background-color: $color__navigation-list--background;
     top: 98%;
+    position: relative;
 }
 
+// Tablet Styles
 @media #{$tablet-860px} {
 
     div[data-widget-type="extendednavigation"] {
@@ -87,6 +90,7 @@
     .nav-open .navigation-body,
     .nav-open .navigation-list {
         top: 0%;
+        padding-top: 50px;
     }
 
     .nav-open .navigation-list {

@@ -6,7 +6,7 @@
 
 .blogpostlist {
 
-
+    // Post Article
     &__post-article {
         margin-bottom: 65px;
         position: relative;
@@ -17,7 +17,7 @@
         }
     }
 
-
+    // Post Content
     &__post-image + &__post-content {
         display: inline-block;
         margin: -150px 35px 0;
@@ -35,7 +35,7 @@
         @media #{$tablet-860px} {
             margin: -40px 5% 0;
             max-width: 100%;
-            width: 90%;
+            width: 100%;
         }
     }
 
@@ -52,7 +52,7 @@
         width: 100%;
     }
 
-
+    // Image
     &__image-link {
         background-size: cover;
         background-position: center;
@@ -75,7 +75,7 @@
         visibility: hidden;
     }
 
-
+    // Title
     &__title-link {
         color: $color__blogpostlist-title--text;
         font-family: $font__h2--font-family;
@@ -107,6 +107,11 @@
         }
     }
 
+    .icon--previous:before,
+    .icon--next:after {
+        display: none;
+    }
+
 
     &__post-image + &__post-content + &__post-footer {
         position: absolute;
@@ -131,7 +136,7 @@
         }
     }
 
-
+    // Post Footer
     &__post-footer {
         padding-top: 15px;
         text-align: right;
@@ -211,6 +216,7 @@
     .blogpostlist__post-image+.blogpostlist__post-content+.blogpostlist__post-footer {
         position: relative;
         text-align: center;
+        top: 0;
     }
     
 }

@@ -4,10 +4,12 @@
 // -----------------------------
 
 
+// Ecom Product
+// ------------
 
 .ecomproduct {
 
-
+    // Product Images
     &__product-images {
         @include flex-display;
     }
@@ -25,7 +27,7 @@
         }
     }
 
-
+    // Product Gallery
     &__product-gallery {
         margin: 0;
         max-width: 260px;
@@ -52,7 +54,7 @@
         }
     }
 
-
+    // Product Content
     &__product-content {
 
         @include box-shadow(0px 0px 37px 15px rgba(0,0,0,0.07));
@@ -77,13 +79,13 @@
         max-width: 550px;
     }
 
-
+    // Legend
     &__legend {
         display: none;
         visibility: hidden;
     }
 
-
+    // Title
     &__product-title {
         color: $color__blogpostlist-title--text;
         font-family: $font__h2--font-family;
@@ -93,7 +95,7 @@
         padding-bottom: 8px;
     }
 
-
+    // Price
     &__product-price {
         color: $color__p--text;
         font-family: $font__p--font-family;
@@ -142,7 +144,7 @@
         }
     }
 
-
+    // Select
     &__select {
         background-color: darken($color__container--background, 6%);
         border: 2px solid darken($color__container--background, 10%);
@@ -166,7 +168,7 @@
         }
     }
 
-
+    // Product Attributes
     &__product-attributes {
         position: absolute;
         left: 800px;
@@ -233,17 +235,17 @@
 
 .responsivecolumns {
 
-    .ecomproduct__product-content {
-        margin: 0;
-        padding: 20px;
-    }
-
-    .ecomproduct__fieldset+.form-group {
-        position: relative;
-    }
-
-    .ecomproduct__view-basket-wrap {
-        padding-left: 0;
+    .ecomproduct {
+        .product-content {
+            margin: 0;
+            padding: 20px;
+        }
+        .fieldset+.form-group {
+            position: relative;
+        }
+        .view-basket-wrap {
+            padding-left: 0;
+        }
     }
 
     .ecomproduct .form {
