@@ -83,16 +83,24 @@ body {
 
 #main {
     margin-top: 40px;
+
+    @media #{$tablet-860px} {
+        margin-top: 20px;
+    }
+
+    @media #{$mobile-650px} {
+        margin-top: 0;
+    }
 }
 
 .container {
     margin: 0 auto;
     max-width: 1200px;
     overflow: hidden;
-    padding: 0 40px;
+    padding: 40px;
 
     @media #{$mobile-650px} {
-        padding: 0 25px;
+        padding: 20px;
     }
 }
 
