@@ -202,7 +202,7 @@ button,
     @include justify-content(flex-start);
     @include align-content(stretch);
 
-    background-color: $color__navigation--background;
+    background-color: $color__header--background;
     max-height: 768px;
 
     @media #{$tablet-860px} {

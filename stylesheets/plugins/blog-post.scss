@@ -132,7 +132,7 @@
 
         @media #{$tablet-860px} {
             max-width: 100%;
-            padding: 20px;
+            padding: 20px 60px;
             position: initial;
             top: inherit;
             left: inherit;
@@ -140,7 +140,7 @@
 
 
         @media #{$mobile-650px} {
-            padding: 20px 0;
+            padding: 20px 40px;
         }
 
 
@@ -218,6 +218,9 @@
         @include flex-wrap(wrap);
         margin: 0;
 
+        @media #{$tablet-860px} {
+            display: block;
+        }
 
         @media #{$mobile-650px} {
             @include justify-content(center);
@@ -240,11 +243,8 @@
         .post-tags {
             width: 100%;
 
-
             @media #{$tablet-860px} {
-                @include flex-display;
-                @include align-items(center);
-                width: initial;
+                display: block;
             }
         }
 
@@ -252,6 +252,9 @@
         .post-category {
             @media #{$desktop-1024px} {
                 margin-right: 20px;
+            }
+            @media #{$mobile-650px} {
+                margin-bottom: 10px;
             }
         }
 

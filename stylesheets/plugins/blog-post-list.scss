@@ -33,9 +33,13 @@
 
 
         @media #{$tablet-860px} {
-            margin: -40px 5% 0;
+            margin: -40px 0 0;
             max-width: 100%;
             width: 100%;
+        }
+
+        @media #{$mobile-650px} {
+            padding: 20px;
         }
     }
 
