@@ -50,6 +50,15 @@
         margin: 0;
         max-width: 100%;
         width: 100%;
+
+        @media #{$tablet-860px} {
+            padding: 40px;
+        }
+
+        @media #{$mobile-650px} {
+            padding: 20px;
+        }
+
     }
 
     // Image
@@ -89,6 +98,13 @@
         }
     }
 
+    &__post-title {
+        a {
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
 
     &__read-more {
         color: $color__button--background;
@@ -144,7 +160,6 @@
 
         @media #{$mobile-650px} {
             padding: 15px 0 0;
-            text-align: center;
         }
     }
 }
