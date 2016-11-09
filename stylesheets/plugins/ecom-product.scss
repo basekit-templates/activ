@@ -28,6 +28,10 @@
         .image-link {
             height: 500px;
             line-height: 500px;
+            @media #{$mobile-650px} {
+                height: 300px;
+                line-height: 300px;
+            }
         }
     }
 

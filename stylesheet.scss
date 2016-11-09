@@ -128,7 +128,7 @@ button,
     // Logo & Companyname Container
     .logo-companyname-container {
         padding: 0;
-        @media #{$tablet} {
+        @media #{$tablet-860px} {
             padding: 20px;
         }
     }
