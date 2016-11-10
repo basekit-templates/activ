@@ -9,8 +9,11 @@
     "images":[
         "images/image-1.jpg",
         "images/logo.png",
+        "images/logo.svg",
         "images/arrow-up.png",
         "images/arrow-down.png",
+        "images/arrow-up.svg",
+        "images/arrow-down.svg",
         "images/slideshow/slideshow-1.jpg",
         "images/slideshow/slideshow-2.jpg",
         "images/slideshow/slideshow-3.jpg"
