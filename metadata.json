@@ -189,7 +189,7 @@
             "color__navigation-list--background" : "lighten(@color-swatch3,3%)",
             "color__navigation--text": "#ffffff",
             "color__navigation--text--hover": "darken(@color-swatch3, 10%)",
-            "color__navigation--text--selected": "#ffffff"
+            "color__navigation--text--selected": "darken(@color-swatch3, 10%)"
         },
         "form": {
             "color__form-legend--text": "@color-swatch3",
@@ -199,9 +199,7 @@
         "slideshow": {
             "color__slideshow-caption--background": "rgba(0,0,0, 0.5)",
             "color__slideshow-title--text": "#ffffff",
-            "color__slideshow-description--text": "#ffffff",
-            "color__slideshow-pagination-item--background": "#ffffff",
-            "color__slideshow-pagination-item--background--selected": "@color__link--text"
+            "color__slideshow-description--text": "#ffffff"
         },
         "feature": {
             "font__feature-headline--font-family": "@font-swatch8-font-family",

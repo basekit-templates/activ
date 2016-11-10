@@ -26,7 +26,10 @@
     }
     .navigation-item:hover .navigation-list--children {
         display: block;
-        min-width: 180px;
+        min-width: 100px;
+    }
+    .navigation-list--children .item-name {
+        padding: 12px!important;
     }
 }
 
@@ -76,6 +79,19 @@
     background-color: $color__navigation-list--background;
     top: 98%;
     position: relative;
+}
+
+// Selected Class
+.extendednavigation li.selected > a  {
+    color: $color__navigation--text--selected;
+}
+
+.extendednavigation__navigation-item.folder.selected span {
+    color: $color__navigation--text--selected;
+}
+
+.extendednavigation__navigation-item.folder.selected .selected {
+    color: $color__navigation--text--selected;
 }
 
 // Tablet Styles

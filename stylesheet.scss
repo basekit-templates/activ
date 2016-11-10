@@ -353,6 +353,10 @@ button,
         margin-right: 10px;
         margin-bottom: 0;
     }
+
+    @media #{$mobile-650px} {
+        max-width: 86%;
+    }
 }
 
 [data-widget-type="logo"],
