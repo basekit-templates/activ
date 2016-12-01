@@ -243,7 +243,7 @@
 
 
             @media #{$tablet-860px} {
-                width: auto;
+                width: 65%
             }
 
 
@@ -408,6 +408,10 @@ form.ecomproductslist__form {
     padding: 20px 0 0 0;
     box-shadow: none;
 
+    legend {
+        font-size: 26px;
+    }
+
     @media #{$tablet-860px} {
         display: block;
         padding: 20px 0 0 0;
@@ -433,6 +437,10 @@ form.ecomproductslist__form {
         @include flex-order(1);
         @include flex(1 1 auto);
         @include align-self (auto);
+
+        legend {
+            margin-bottom: 0;
+        }
 
         @media #{$tablet-860px} {
             display: block;
