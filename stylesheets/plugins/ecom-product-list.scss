@@ -241,11 +241,7 @@
         // Input Container
         &:first-child {
 
-
-            @media #{$tablet-860px} {
-                width: 65%
-            }
-
+            width: 65%;
 
             @media #{$mobile-650px} {
                 margin-right: 0;
