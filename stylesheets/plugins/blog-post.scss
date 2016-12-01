@@ -337,7 +337,7 @@
 
         button {
             background-color: transparent;
-            color: lighten($color__body--background, 100%);
+            color: $color__socialicons--icon--background;
             font-size: 16px;
             min-width: initial;
             padding: 0;
