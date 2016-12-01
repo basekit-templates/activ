@@ -347,7 +347,7 @@ form.ecomproductslist__form {
 
 
     .form-group {
-
+        @include flex(1 1 auto);
     }
 
 
@@ -400,20 +400,20 @@ form.ecomproductslist__form {
         margin-bottom: 30px;
     }
 }
-
     // Form Body
     // ------------------------------
     
     
     .fieldset--filters .form-body {
-        .flex-display(@display: flex);
-        .flex-direction(@direction: row);
-        .flex-wrap(@wrap: wrap);
-        .justify-content(@justify: flex-start);
-        .align-content(@align: stretch);
-        .align-items(@align: flex-end);
+
+        @include flex-display;
+        @include flex-direction(row);
+        @include flex-wrap(wrap);
+        @include justify-content(flex-start);
+        @include align-content (stretch);
+        @include align-items (flex-end);
     
-        @media @bp-global-small {
+        @media #{$mobile-650px} {
             // Hack for Mobile IE, needs fixed width
             width: 100px;
             min-width: 100%;
