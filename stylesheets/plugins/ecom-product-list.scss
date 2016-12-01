@@ -403,7 +403,7 @@ form.ecomproductslist__form {
     @include flex-wrap(nowrap);
     @include justify-content(flex-start);
     @include align-content (stretch);
-    @include align-items: (flex-start);
+    @include align-items (flex-start);
 
     padding: 20px 0 0 0;
     box-shadow: none;
@@ -421,7 +421,7 @@ form.ecomproductslist__form {
 
         @include flex-order(0);
         @include flex(1 1 auto);
-        @include align-self: (auto);
+        @include align-self (auto);
     
         @media #{$tablet-860px} {
                 display: block;
@@ -432,7 +432,7 @@ form.ecomproductslist__form {
     .fieldset--filters {
         @include flex-order(1);
         @include flex(1 1 auto);
-        @include align-self: (auto);
+        @include align-self (auto);
 
         @media #{$tablet-860px} {
             display: block;
